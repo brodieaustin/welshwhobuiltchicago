@@ -1,0 +1,12 @@
+input, select, textarea{
+  font-size: .875rem;
+  font-family: $font-family;
+  color: $font-color;
+}
+
+.control-group{
+
+  &.inline{
+    display: inline;
+  }
+}

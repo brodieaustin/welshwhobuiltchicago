@@ -1,0 +1,21 @@
+.site-nav{
+  float: left;
+  margin-left: 1rem;
+  
+  ul{
+    @extend .unstyled-list;
+
+    li{
+      display: inline-block;
+    }
+  }
+
+  a{
+    display: block;
+    margin: 0 1rem;
+    color: $font-color;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+    line-height: 3rem;
+  }
+}
