@@ -1,15 +1,27 @@
 .site-header{
-  padding: 2rem;
-  background: $primary-color url('/assets/img/dragon-no-flag.png') no-repeat left center;
+  padding: 2rem 1rem;
+  background: $primary-color url('/assets/img/dragon-no-flag.png') no-repeat;
+  background-position: right top;
   overflow: hidden;
+
+  @media (#{$bp-larger-than-tablet}){
+    padding: 2rem;
+  }
+
+  @media (#{$bp-larger-than-desktop}){
+    background-position: left center;
+  }
 }
 
 .brand{
   display: block;
-  float: left;
+  padding-top: .25rem;
   color: $white;
   text-transform: uppercase;
   letter-spacing: .1875rem;
   font-size: 1.25rem;
-  line-height: 3rem;
+
+  @media (#{$bp-larger-than-desktop}){
+    float: left;
+  }
 }

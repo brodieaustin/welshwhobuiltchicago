@@ -1,8 +1,21 @@
 .site-search{
-  float: right;
-  background: lighten($primary-color, 10%);
+  clear: both;
+  margin-top: 2rem;
+
+  @media screen and (#{$bp-larger-than-desktop}){
+    clear: none;
+    margin-top: 0;
+    float: right;
+    width: 18rem;
+  }
+
+  form{
+    position: relative;
+    background: lighten($primary-color, 10%);
+  }
 
   input[type=text]{
+    max-width: 93%;
     padding: .75rem;
     background: transparent;
     border: 0;
@@ -15,7 +28,10 @@
   }
 
   button{
-    padding: .5rem 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .5rem;
     background: transparent;
     border: 0;
     vertical-align: middle;

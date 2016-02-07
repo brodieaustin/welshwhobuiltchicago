@@ -9,4 +9,12 @@ $border-color: #bbb;
 $link-color: $primary-color;
 $font-color: #333;
 
+//fonts
 $font-family: 'Times New Roman', serif;
+
+//break points
+$bp-larger-than-mobile: "min-width: 400px" !default;
+$bp-larger-than-phablet: "min-width: 550px" !default;
+$bp-larger-than-tablet: "min-width: 750px" !default;
+$bp-larger-than-desktop: "min-width: 1140px" !default;
+$bp-larger-than-desktophd: "min-width: 1200px" !default;

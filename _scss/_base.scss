@@ -6,15 +6,29 @@ body{
   margin: 0;
   padding: 0;
   background: $light-grey;
-  font: 1.5/16px 'Times New Roman', serif;
+  font: 16px/1.6 'Times New Roman', serif;
 }
 
 h1, h2, h3, h4, h5, h6{
+  margin-bottom: .125rem;
   font-weight: normal;
 }
 
-a{
+h1{
   color: $primary-color;
+}
+
+h2{
+  color: $primary-color;
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+a{
+  color: darken($primary-color, 10%);
   text-decoration: none;
   transition: opacity .2s ease;
 

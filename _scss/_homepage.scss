@@ -1,0 +1,97 @@
+.hero{
+  @extend .container;
+  padding-top: 0;
+
+  .inner{
+    height: 340px;
+    padding: 2rem;
+    background: url('/assets/img/nypl-chicago-map.jpg') no-repeat center center;
+    text-align: center;
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      padding: 4rem 2rem;
+    }
+  }
+
+  p{
+    margin: 0 auto 2rem auto;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    color: $white;
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      max-width: 70%;
+    }
+  }
+}
+
+.explore{
+  @extend .container;
+
+  ul{
+    @extend .unstyled-list;
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      display: flex;
+    }
+
+    li{
+      margin: 2rem 0 0 0;
+      padding: 2rem;
+      background: $white;
+      box-shadow: 0 1px 2px lighten($dark-grey, 30%);
+
+      @media screen and (#{$bp-larger-than-tablet}){
+        margin: 0 0 0 2rem;
+      }
+
+      &:first-of-type{
+        margin-top: 0;
+        margin-left: 0;
+      }
+    }
+  }
+
+  h2{
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: .0625rem;
+  }
+
+  a{
+    text-transform: uppercase;
+    letter-spacing: .0625rem;
+
+    &:after{
+      content: "\2192";
+    }
+  }
+
+}
+
+.book{
+  @extend .container;
+
+  .inner{
+    display: flex;
+    padding: 2rem 4rem;
+    background: $white;
+    box-shadow: 0 1px 2px lighten($dark-grey, 30%);
+  }
+
+  .book-blurb{
+    width: 60%;
+    margin-left: 2rem;
+
+    h2{
+      margin-top: 0;
+      text-transform: uppercase;
+      letter-spacing: .0625rem;
+    }
+  }
+
+  .book-options{
+    margin: 2rem 0;
+    text-align: right;
+  }
+}

@@ -1,0 +1,50 @@
+.site-footer{
+  @extend .container;
+  color: $dark-grey;
+  padding-bottom: 0;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    padding-bottom: 3rem;
+  }
+
+  .brand{
+    color: $primary-color;
+    font-size: 1rem;
+  }
+
+  .nav{
+    clear: both;
+    padding-top: .5rem;
+
+    a{
+      color: $dark-grey;
+      font-size: .875rem;
+    }
+  }
+}
+
+.cambrian{
+  margin-top: 2rem;
+  height: 110px;
+  overflow: hidden;
+
+  @media screen and (#{$bp-larger-than-tablet}){
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    width: 50%;
+  }
+
+  @media screen and (#{$bp-larger-than-desktop}){
+    width: 40%;
+  }
+
+  p{
+    float: left;
+    width: 50%;
+  }
+
+  img{
+    float: right;
+  }
+}
