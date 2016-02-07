@@ -4,7 +4,7 @@
   background-position: right top;
   overflow: hidden;
 
-  @media (#{$bp-larger-than-tablet}){
+  @media (#{$bp-larger-than-desktop}){
     padding: 2rem;
   }
 
@@ -21,7 +21,7 @@
   letter-spacing: .1875rem;
   font-size: 1.25rem;
 
-  @media (#{$bp-larger-than-desktop}){
+  @media (#{$bp-larger-than-tablet}){
     float: left;
   }
 }

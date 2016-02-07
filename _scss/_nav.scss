@@ -1,7 +1,7 @@
 .site-nav{
   margin-top: 1rem;
 
-  @media screen and (#{$bp-larger-than-desktop}){
+  @media screen and (#{$bp-larger-than-tablet}){
     float: left;
     margin-top: 0;
     margin-left: 2rem;
