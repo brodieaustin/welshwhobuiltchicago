@@ -70,7 +70,7 @@ input, select, textarea {
   padding: 1rem; }
 
 .site-header {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem 1.5rem;
   background: #EBB731 url("../img/dragon-no-flag.png") no-repeat;
   background-position: right top;
   overflow: hidden; }
@@ -113,7 +113,7 @@ input, select, textarea {
 
 .site-search {
   clear: both;
-  padding-top: 2rem; }
+  padding-top: 1.5rem; }
   @media screen and (min-width: 1140px) {
     .site-search {
       clear: none;
