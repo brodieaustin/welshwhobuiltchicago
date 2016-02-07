@@ -35,7 +35,7 @@ a {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px); }
 
-.unstyled-list, .nav, .explore ul, .sidebar ul {
+.unstyled-list, .nav, .explore ul, .sidebar ul, .find ul {
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -43,11 +43,19 @@ a {
 .button {
   display: inline-block;
   padding: 1rem 1.875rem;
+  border: 0;
   text-decoration: none;
   letter-spacing: .125rem;
   text-transform: uppercase;
   -webkit-transition: opacity .2s ease;
   transition: opacity .2s ease; }
+  .button.more {
+    display: block;
+    width: 40%;
+    margin: 2rem auto;
+    background: #EBB731;
+    text-align: center;
+    color: #333; }
   .button:hover {
     opacity: .7; }
   .button.border {
@@ -63,11 +71,14 @@ input, select, textarea {
 .control-group.inline {
   display: inline; }
 
-.container, .site-footer, .hero, .explore, .book, .entry {
+.container, .site-footer, .hero, .explore, .book, .page, .entry {
   position: relative;
   max-width: 64rem;
   margin: 0 auto;
-  padding: 1rem; }
+  padding: 1rem 0; }
+  @media screen and (min-width: 850px) {
+    .container, .site-footer, .hero, .explore, .book, .page, .entry {
+      padding: 1rem; } }
 
 .site-header {
   padding: 1rem 1rem 1.5rem;
@@ -152,7 +163,7 @@ input, select, textarea {
 
 .site-footer {
   color: #888888;
-  padding-bottom: 0; }
+  padding: 1rem 1rem 0; }
   @media screen and (min-width: 850px) {
     .site-footer {
       padding-bottom: 3rem; } }
@@ -238,18 +249,29 @@ input, select, textarea {
     content: "\2192"; }
 
 .book .inner {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2rem 4rem;
+  padding: 2rem;
   background: #fff;
   -webkit-box-shadow: 0 1px 2px #d5d5d5;
           box-shadow: 0 1px 2px #d5d5d5; }
+  @media screen and (min-width: 550px) {
+    .book .inner {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 2rem 4rem; } }
+
+.book .book-jacket img {
+  max-width: 100%;
+  height: auto; }
 
 .book .book-blurb {
-  width: 60%;
-  margin-left: 2rem; }
+  margin-top: 1rem; }
+  @media screen and (min-width: 550px) {
+    .book .book-blurb {
+      width: 60%;
+      margin-top: 0;
+      margin-left: 2rem; } }
   .book .book-blurb h2 {
     margin-top: 0;
     text-transform: uppercase;
@@ -259,17 +281,17 @@ input, select, textarea {
   margin: 2rem 0;
   text-align: right; }
 
-.entry {
+.page, .entry {
   padding-top: 0; }
-  .entry .inner {
+  .page .inner, .entry .inner {
     padding: 2rem;
     background: #fff;
     -webkit-box-shadow: 0 1px 2px #d5d5d5;
             box-shadow: 0 1px 2px #d5d5d5; }
     @media screen and (min-width: 850px) {
-      .entry .inner {
+      .page .inner, .entry .inner {
         padding: 4rem 5rem; } }
-  .entry a {
+  .page a, .entry a {
     border-bottom: 1px solid #d49f15; }
 
 .entry-type {
@@ -315,3 +337,20 @@ input, select, textarea {
 .entry-footer {
   clear: both;
   padding-top: 2rem; }
+
+.find h2 {
+  border-bottom: 1px solid #888888;
+  text-transform: uppercase;
+  letter-spacing: .125rem;
+  color: #888888; }
+
+.find ul {
+  margin-top: 1rem;
+  -webkit-columns: 3 150px;
+     -moz-columns: 3 150px;
+          columns: 3 150px; }
+  .find ul li {
+    margin-bottom: .5rem; }
+  .find ul a {
+    color: #333;
+    border-color: #333; }

@@ -1,7 +1,7 @@
 .site-footer{
   @extend .container;
   color: $dark-grey;
-  padding-bottom: 0;
+  padding: 1rem 1rem 0;
 
   @media screen and (#{$bp-larger-than-tablet}){
     padding-bottom: 3rem;

@@ -76,15 +76,32 @@
   @extend .container;
 
   .inner{
-    display: flex;
-    padding: 2rem 4rem;
+    padding: 2rem;
     background: $white;
     box-shadow: 0 1px 2px lighten($dark-grey, 30%);
+
+    @media screen and (#{$bp-larger-than-phablet}){
+      display: flex;
+      padding: 2rem 4rem;
+    }
+  }
+
+  .book-jacket{
+
+    img{
+      max-width: 100%;
+      height: auto;
+    }
   }
 
   .book-blurb{
-    width: 60%;
-    margin-left: 2rem;
+    margin-top: 1rem;
+
+    @media screen and (#{$bp-larger-than-phablet}){
+      width: 60%;
+      margin-top: 0;
+      margin-left: 2rem;
+    }
 
     h2{
       margin-top: 0;

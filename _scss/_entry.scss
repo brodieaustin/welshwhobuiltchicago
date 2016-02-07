@@ -1,21 +1,5 @@
 .entry{
-  @extend .container;
-  padding-top: 0;
-
-  .inner{
-    padding: 2rem;
-    background: $white;
-    box-shadow: 0 1px 2px lighten($dark-grey, 30%);
-
-    @media screen and (#{$bp-larger-than-tablet}){
-      padding: 4rem 5rem;
-    }
-  }
-
-  a{
-    border-bottom: 1px solid darken($primary-color, 10%);
-  }
-
+  @extend .page;
 }
 
 .entry-type{
