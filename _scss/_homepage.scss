@@ -5,7 +5,7 @@
   .inner{
     height: 340px;
     padding: 2rem;
-    background: url('assets/img/nypl-chicago-map.jpg') no-repeat center center;
+    background: url('../img/nypl-chicago-map.jpg') no-repeat center center;
     text-align: center;
 
     @media screen and (#{$bp-larger-than-tablet}){
