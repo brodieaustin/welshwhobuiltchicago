@@ -71,7 +71,7 @@ input, select, textarea {
 
 .site-header {
   padding: 2rem 1rem;
-  background: #EBB731 url("/assets/img/dragon-no-flag.png") no-repeat;
+  background: #EBB731 url("../img/dragon-no-flag.png") no-repeat;
   background-position: right top;
   overflow: hidden; }
   @media (min-width: 750px) {
@@ -190,7 +190,7 @@ input, select, textarea {
   .hero .inner {
     height: 340px;
     padding: 2rem;
-    background: url("/assets/img/nypl-chicago-map.jpg") no-repeat center center;
+    background: url("../img/nypl-chicago-map.jpg") no-repeat center center;
     text-align: center; }
     @media screen and (min-width: 750px) {
       .hero .inner {
