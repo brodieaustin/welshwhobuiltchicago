@@ -42,9 +42,24 @@
   p{
     float: left;
     width: 50%;
+
+    @media screen and (#{$bp-larger-than-phablet}){
+      width: 66%;
+    }
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      width: 50%;
+    }
   }
 
   img{
-    float: right;
+    position: absolute;
+    right: 1rem;
+    bottom: -1rem;
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      top: 0;
+    }
+
   }
 }
